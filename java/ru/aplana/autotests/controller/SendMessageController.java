@@ -1,11 +1,10 @@
-package ru.aplana.autotests.controllers;
+package ru.aplana.autotests.controller;
 
 import org.springframework.web.bind.annotation.*;
 import ru.aplana.autotests.enums.TestStatus;
-import ru.aplana.autotests.requests.SendMessageRequest;
-import ru.aplana.autotests.responses.SendMessageResponse;
-import ru.aplana.autotests.requests.PaymentRequest;
-import ru.aplana.autotests.responses.BaseResponse;
+import ru.aplana.autotests.request.SendMessageRequest;
+import ru.aplana.autotests.response.SendMessageResponse;
+import ru.aplana.autotests.response.BaseResponse;
 
 @RestController
 //@RequestMapping("/payment")

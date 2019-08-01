@@ -1,4 +1,4 @@
-package ru.aplana.autotests.responses;
+package ru.aplana.autotests.response;
 
 import lombok.Getter;
 

@@ -1,4 +1,4 @@
-package ru.aplana.autotests.requests;
+package ru.aplana.autotests.request;
 
 import lombok.Getter;
 import lombok.Setter;
