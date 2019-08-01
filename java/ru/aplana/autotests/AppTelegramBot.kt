@@ -1,14 +1,14 @@
 package ru.aplana.autotests
 
 object AppTelegramBot {
-    private val BOT_NAME_PROP_KEY = "BOT_NAME"
-    private val BOT_TOKEN_PROP_KEY = "BOT_TOKEN"
+    private const val BOT_NAME_PROP_KEY = "BOT_NAME"
+    private const val BOT_TOKEN_PROP_KEY = "BOT_TOKEN"
 
-    private val USE_PROXY_PROP_KEY = "USE_PROXY" // true/false
-    private val PROXY_HOST_PROP_KEY = "PROXY_HOST"
-    private val PROXY_PORT_PROP_KEY = "PROXY_PORT"
-    private val PROXY_USER_PROP_KEY = "PROXY_USER"
-    private val PROXY_PASSWORD_PROP_KEY = "PROXY_PASSWORD"
+    private const val USE_PROXY_PROP_KEY = "USE_PROXY" // true/false
+    private const val PROXY_HOST_PROP_KEY = "PROXY_HOST"
+    private const val PROXY_PORT_PROP_KEY = "PROXY_PORT"
+    private const val PROXY_USER_PROP_KEY = "PROXY_USER"
+    private const val PROXY_PASSWORD_PROP_KEY = "PROXY_PASSWORD"
 
     //    private static final Logger logger = LogManager.getLogger(AppTelegramBot.class.getName());
 
