@@ -11,7 +11,7 @@ class RegistrationState(userContext: UserContext, chatId: Long?, send: (SendMess
     : UserState(userContext, chatId, send) {
 
     @Autowired
-    lateinit var projectRepository: ProjectRepository
+    var projectRepository = ProjectRepository
 
     override fun onMessageReceived(message: Message) {
         val messageText = message.text
@@ -19,6 +19,9 @@ class RegistrationState(userContext: UserContext, chatId: Long?, send: (SendMess
         if (messageText == "Назад") {
             userContext.changeState(StartState(userContext, chatId, send))
         } else {
+//            val project = Project.builder()
+//                    .id(message.chatId)
+//                    .build()
             var project = Project()
             project.id = message.chatId
 

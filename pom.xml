@@ -71,6 +71,13 @@
             <version>27.1-jre</version>
         </dependency>
 
+        <!--<dependency>-->
+            <!--<groupId>com.h2database</groupId>-->
+            <!--<artifactId>h2</artifactId>-->
+            <!--<version>1.4.197</version>-->
+            <!--<scope>runtime</scope>-->
+        <!--</dependency>-->
+
     </dependencies>
 
     <properties>
@@ -130,6 +137,31 @@
                     </execution>
                 </executions>
             </plugin>
+            <!--<plugin>-->
+                <!--<groupId>org.jetbrains.kotlin</groupId>-->
+                <!--<artifactId>kotlin-maven-plugin</artifactId>-->
+                <!--<configuration>-->
+                    <!--<compilerPlugins>-->
+                        <!--<plugin>jpa</plugin>-->
+                        <!--<plugin>spring</plugin>-->
+                    <!--</compilerPlugins>-->
+                    <!--<args>-->
+                        <!--<arg>-Xjsr305=strict</arg>-->
+                    <!--</args>-->
+                <!--</configuration>-->
+                <!--<dependencies>-->
+                    <!--<dependency>-->
+                        <!--<groupId>org.jetbrains.kotlin</groupId>-->
+                        <!--<artifactId>kotlin-maven-noarg</artifactId>-->
+                        <!--<version>${kotlin.version}</version>-->
+                    <!--</dependency>-->
+                    <!--<dependency>-->
+                        <!--<groupId>org.jetbrains.kotlin</groupId>-->
+                        <!--<artifactId>kotlin-maven-allopen</artifactId>-->
+                        <!--<version>${kotlin.version}</version>-->
+                    <!--</dependency>-->
+                <!--</dependencies>-->
+            <!--</plugin>-->
         </plugins>
     </build>
 
