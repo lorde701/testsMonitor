@@ -11,7 +11,7 @@ class RegistrationState(userContext: UserContext, chatId: Long?, send: (SendMess
     : UserState(userContext, chatId, send) {
 
     @Autowired
-    var projectRepository = ProjectRepository
+    lateinit var projectRepository : ProjectRepository
 
     override fun onMessageReceived(message: Message) {
         val messageText = message.text
