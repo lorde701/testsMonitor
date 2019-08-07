@@ -1,8 +1,11 @@
 package ru.aplana.autotests.request;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+@Builder
 public class PaymentRequest {
 
     @Getter @Setter

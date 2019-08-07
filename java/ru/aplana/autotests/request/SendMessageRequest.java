@@ -1,9 +1,12 @@
 package ru.aplana.autotests.request;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import ru.aplana.autotests.enums.TestStatus;
 
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+@Builder
 public class SendMessageRequest {
 
     @Getter @Setter

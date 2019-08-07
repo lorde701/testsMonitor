@@ -3,16 +3,17 @@ package ru.aplana.autotests.entity
 import lombok.*
 import javax.persistence.*
 
-//@NoArgsConstructor @AllArgsConstructor @ToString @Builder
+@NoArgsConstructor @AllArgsConstructor @ToString @Builder
 @Entity
-@Table(name = "project")
 class Project {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+
+    @Getter @Setter
+    @Id @GeneratedValue(strategy = GenerationType.AUTO)
     var id: Long? = null
 
-    @Column
+    //    @Column
+    @Getter @Setter
     var name: String? = null
 
 
